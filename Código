@@ -1,0 +1,1122 @@
+import time 
+for i in range(3):
+    print("carregando...")
+    time.sleep(1) 
+print()
+print("Seja bem vindo ao Segredos de Hogwarts!")
+print()
+print("Vamos começar a criar seu personagem.")
+print()
+nome = input("Qual será o nome do seu personagem?")
+print()
+sobrenome = input("Qual será o seu sobrenome?")
+print()
+cabelo = input("Qual a cor do seu cabelo?")
+print()
+olhos = input("Qual a cor dos seus olhos?")
+print()
+print("Personagem criado! Vamos iniciar o jogo.")
+print()
+contador = 3
+while contador > 0:
+    print(contador)
+    contador -= 1
+print()
+input("Narrador: Depois de anos ouvindo histórias sobre magia, feitiços e criaturas fantásticas… você finalmente estava ali.")
+input("O teto encantado mostrava um céu estrelado acima de sua cabeça. Bandeiras das quatro casas balançavam lentamente no ar, como se o próprio castelo estivesse observando cada passo seu.")
+input("Quatro enormes mesas estavam ocupadas por alunos de todas as idades. Alguns conversavam animadamente, outros observavam os novos estudantes com curiosidade.")
+input("À frente, um velho chapéu remendado repousava sobre um banco de madeira. No fundo do salão, estava a longa mesa dos professores. ")
+
+input("O professor Magnus, com seus olhos brilhantes e barba longa, sorria calorosamente para os novos alunos. Ao seu lado, a professora Cassandra, com sua postura rígida e olhar atento, observava cada movimento.")
+input("O professor Magnus se levantou e começou a falar, sua voz ecoando pelo salão. Ele falou sobre a importância da amizade, coragem e lealdade, e como essas qualidades seriam testadas durante o ano letivo.")
+input("Ele também mencionou a importância de escolher a casa certa, e como cada casa tinha suas próprias características e valores. Ele explicou que o Chapéu Seletor seria colocado na cabeça de cada aluno, e que ele escolheria a casa que melhor se encaixasse com a personalidade de cada um.")
+input("O professor Magnus terminou seu discurso com um sorriso caloroso, e o Chapéu Seletor começou a ser colocado na cabeça dos novos alunos, um por um. O suspense era palpável, e cada aluno esperava ansiosamente para descobrir qual casa seria escolhida para eles.")
+input("Finalmente, chegou a sua vez. O Chapéu Seletor foi colocado em sua cabeça, e você sentiu uma estranha sensação de formigamento. O Chapéu começou a falar, analisando sua personalidade e suas qualidades.")
+print()
+print("=== CHAPÉU SELETOR DE HOGWARTS ===")
+
+grifinoria = 0
+sonserina = 0
+corvinal = 0
+lufalufa = 0
+
+# Pergunta 1
+print("\n1. Qual qualidade você mais valoriza?")
+print("a) Coragem")
+print("b) Ambição")
+print("c) Inteligência")
+print("d) Lealdade")
+
+resposta = input("Resposta: ").lower()
+
+if resposta == "a":
+    grifinoria += 1
+elif resposta == "b":
+    sonserina += 1
+elif resposta == "c":
+    corvinal += 1
+elif resposta == "d":
+    lufalufa += 1
+
+# Pergunta 2
+print("\n2. O que você faria diante de um grande desafio?")
+print("a) Enfrentaria sem medo")
+print("b) Procuraria uma forma de sair vencedor")
+print("c) Estudaria todas as possibilidades")
+print("d) Pediria ajuda aos amigos")
+
+resposta = input("Resposta: ").lower()
+
+if resposta == "a":
+    grifinoria += 1
+elif resposta == "b":
+    sonserina += 1
+elif resposta == "c":
+    corvinal += 1
+elif resposta == "d":
+    lufalufa += 1
+
+# Pergunta 3
+print("\n3. Qual matéria de Hogwarts mais te interessa?")
+print("a) Defesa Contra as Artes das Trevas")
+print("b) Poções")
+print("c) Feitiços")
+print("d) Trato das Criaturas Mágicas")
+
+resposta = input("Resposta: ").lower()
+
+if resposta == "a":
+    grifinoria += 1
+elif resposta == "b":
+    sonserina += 1
+elif resposta == "c":
+    corvinal += 1
+elif resposta == "d":
+    lufalufa += 1
+
+# Pergunta 4
+print("\n4. Como seus amigos te descreveriam?")
+print("a) Corajoso")
+print("b) Determinado")
+print("c) Inteligente")
+print("d) Gentil")
+
+resposta = input("Resposta: ").lower()
+
+if resposta == "a":
+    grifinoria += 1
+elif resposta == "b":
+    sonserina += 1
+elif resposta == "c":
+    corvinal += 1
+elif resposta == "d":
+    lufalufa += 1
+
+# Resultado
+pontos = {
+    "Grifinória": grifinoria,
+    "Sonserina": sonserina,
+    "Corvinal": corvinal,
+    "Lufa-Lufa": lufalufa
+}
+
+casa = max(pontos, key=pontos.get)
+
+print("\n=== RESULTADO ===")
+print(f"O Chapéu Seletor escolheu: {casa}!")
+
+print()
+input("Professor Magnus: Bem-vindo à sua nova casa! Prepare-se para um ano cheio de aventuras, desafios e amizades. Lembre-se, a verdadeira magia está dentro de você. Boa sorte! ")
+
+print("\nUma aluna veterana se aproxima de você após a cerimônia de seleção.")
+
+print(f"\nVeterana: Olá! Meu nome é Helena. Sou da casa {casa} vou levar vocês até o domitório")
+print("Veterana: Venha comigo, vou te apresentar o lugar!")
+
+print("\nComo você responde?")
+print("1 - Obrigado! Estou ansioso para conhecer tudo.")
+print("2 - Estou um pouco nervoso...")
+print("3 - Já consigo me virar sozinho.")
+
+resposta = input("Escolha uma opção: ")
+
+if resposta == "1":
+    print("\nVocê: Obrigado! Estou ansioso para conhecer tudo.")
+    print("Helena: Essa é a atitude certa! Hogwarts é um lugar incrível.")
+elif resposta == "2":
+    print("\nVocê: Estou um pouco nervoso...")
+    print("Helena: Não se preocupe. Todo aluno passa por isso no primeiro dia.")
+elif resposta == "3":
+    print("\nVocê: Já consigo me virar sozinho.")
+    print("Helena: Talvez, mas os corredores de Hogwarts são um verdadeiro labirinto.")
+else:
+    print("\nVocê apenas acompanha Helena em silêncio.")
+    print("Helena: Tudo bem, vou te mostrar o caminho.")
+
+input("\nEnquanto caminham pelos corredores, os quadros nas paredes observam vocês.")
+
+input("\nHelena: Aqui ficam as salas de aula mais usadas pelos alunos do primeiro ano.")
+input("Helena: E por ali está o Grande Salão, onde acontecem as refeições.")
+
+input("\nDepois de alguns minutos, vocês chegam aos dormitórios.")
+
+input("\nHelena: Pronto! Este é o dormitório da nossa casa.")
+input("Helena: Aqui você poderá descansar, estudar e conversar com seus colegas.")
+
+print("\nO que você faz?")
+print("1 - Perguntar sobre as regras da casa.")
+print("2 - Perguntar sobre os outros alunos.")
+print("3 - Agradecer pela ajuda.")
+
+escolha = input("Escolha uma opção: ")
+
+if escolha == "1":
+    print("\nVocê: Existem regras importantes que eu devo saber?")
+    print("Helena: Sim. Respeite os colegas, não saia à noite sem permissão e mantenha seu quarto organizado.")
+elif escolha == "2":
+    print("\nVocê: Como são os outros alunos daqui?")
+    print("Helena: A maioria é muito amigável. Tenho certeza de que você fará bons amigos.")
+elif escolha == "3":
+    print("\nVocê: Obrigado por me mostrar tudo.")
+    print("Helena: Foi um prazer ajudar. Bem-vindo à sua nova casa!")
+
+input("\nHelena: Agora descanse. Amanhã sua verdadeira aventura em Hogwarts começa!")
+for i in range(3):
+    print("ZZZ...")
+    time.sleep(1)
+
+print("\nÉ de manhã e você está dormindo tranquilamente quando sente algo pesado sobre seu peito.")
+print("Ao abrir os olhos, vê um livro antigo de capa escura.")
+print("De repente, ele se abre sozinho.")
+
+input("\nLivro Misterioso: Finalmente... você acordou.")
+
+print("\nComo você responde?")
+print("1 - Quem é você?")
+print("2 - Como um livro pode falar?")
+print("3 - Isso é algum tipo de pegadinha?")
+
+escolha = input("Escolha uma opção: ")
+
+if escolha == "1":
+    print("\nVocê: Quem é você?")
+    print("Livro Misterioso: Uma excelente pergunta.")
+    print("Livro Misterioso: Infelizmente, eu também não me lembro completamente.")
+elif escolha == "2":
+    print("\nVocê: Como um livro pode falar?")
+    print("Livro Misterioso: Estamos em Hogwarts.")
+    print("Livro Misterioso: Um livro falante nem está entre as coisas mais estranhas daqui.")
+elif escolha == "3":
+    print("\nVocê: Isso é algum tipo de pegadinha?")
+    print("Livro Misterioso: Se fosse, eu teria escolhido uma vítima mais divertida.")
+else:
+    print("\nVocê fica em silêncio.")
+    print("Livro Misterioso: Certo... você é do tipo observador.")
+
+input("\nLivro Misterioso: Escute com atenção.")
+input("Livro Misterioso: Existe um segredo escondido neste castelo e...")
+
+input("\n*CREAK*")
+input("Você ouve a porta do dormitório se abrindo.")
+
+input("\nLivro Misterioso: Esconda-me! AGORA!")
+
+input("\nRapidamente você enfia o livro debaixo do travesseiro.")
+
+input("\nDois garotos idênticos entram no dormitório.")
+input("Um deles está sorrindo. O outro parece irritado.")
+
+input("\nGaroto sorridente: Ah! Você já acordou!")
+input("Garoto sorridente: Eu sou Theo. Prazer em conhecer você.")
+input("Theo: Nós somos seus colegas de quarto.")
+
+input("\nGaroto irritado: E eu sou Tristan.")
+
+input("\nTheo: Não liga para ele.")
+input("Theo: Ele parece bravo o tempo todo.")
+
+input("\nTristan: Porque quase sempre estou.")
+
+print("\nComo você responde?")
+print("1 - Prazer em conhecer vocês.")
+print("2 - Vocês sempre discutem assim?")
+print("3 - Por que você parece tão irritado?")
+
+resposta = input("Escolha uma opção: ")
+
+if resposta == "1":
+    print("\nVocê: Prazer em conhecer vocês.")
+    print("Theo: Finalmente alguém educado!")
+    print("Tristan: Ainda é cedo para ter certeza disso.")
+
+elif resposta == "2":
+    print("\nVocê: Vocês sempre discutem assim?")
+    print("Theo: Sim.")
+    print("Tristan: Sim.")
+    print("Theo: Viu? Até concordamos às vezes.")
+    print("Tristan: Não acostume com isso.")
+
+elif resposta == "3":
+    print("\nVocê: Por que você parece tão irritado?")
+    print("Tristan: Porque acordei.")
+    print("Theo: E porque foi dormir.")
+    print("Tristan: E porque estou conversando.")
+    print("Theo: Resumindo, ele é assim mesmo.")
+
+else:
+    print("\nVocê apenas observa os dois.")
+    print("Theo: Você é bem quieto, não é?")
+    print("Tristan: Melhor do que falar demais.")
+
+input("\nTheo: Bem, hoje teremos as primeiras aulas.")
+input("Theo: Tenho certeza de que você vai gostar daqui.")
+
+input("\nTristan: Ou não.")
+
+input("\nTheo: Ignore ele.")
+
+input("\nTristan: Ignore você.")
+
+input("\nTheo: Estamos indo para o Salâo principal tomar café da manhã! Te vejo nas aulas!")
+
+
+input("\nOs dois saem do quarto.")
+input("Logo em seguida, o dormitório fica em silêncio.")
+
+input("\nVocê sente algo se mexendo sob o travesseiro.")
+
+input("\nLivro Misterioso (sussurrando): Seus novos colegas são interessantes.")
+
+input("Livro Misterioso: Mas isso pode esperar.")
+
+input("Livro Misterioso: Hoje começaremos a desvendar o segredo de Hogwarts...")
+
+input("Livro Misterioso: Temos pouco tempo.")
+
+input("\nVocê: Pouco tempo para quê?")
+
+input("\nLivro Misterioso: Preciso que encontre uma pista para mim.")
+input("Livro Misterioso: Me lembrei de algo.")
+
+input("\nLivro Misterioso: Atrás do retrato da bruxa Morgana, no corredor do segundo andar, existe um compartimento secreto.")
+input("Livro Misterioso: Traga o que estiver lá dentro.")
+
+input("\nVocê: E se alguém me vir?")
+
+input("\nLivro Misterioso: Então improvise.")
+input("Livro Misterioso: Agora vá!")
+
+input("\nPressione ENTER para sair do dormitório.")
+
+input("\nVocê atravessa os corredores quase vazios de Hogwarts.")
+input("Após alguns minutos, encontra o retrato da bruxa Morgana.")
+
+input("\nVocê olha para os lados para garantir que ninguém está observando.")
+
+print("\nO que você faz?")
+print("1 - Examinar o retrato.")
+print("2 - Tentar mover a moldura.")
+print("3 - Procurar algum mecanismo secreto.")
+
+escolha = input("Escolha uma opção: ")
+
+input("\nApós alguns instantes, você encontra uma pequena alavanca escondida.")
+
+input("\n*CLIQUE*")
+
+input("\nUma parte da parede se abre lentamente.")
+
+input("\nDentro do compartimento há apenas um objeto.")
+
+input("\nVocê pega uma pequena chave de prata com símbolos estranhos gravados nela.")
+
+input("\nLivro Misterioso: Excelente...")
+input("Livro Misterioso: Eu me lembrava dela.")
+
+input("\nVocê: O que essa chave abre?")
+
+input("\nLivro Misterioso: Não tenho certeza.")
+input("Livro Misterioso: Mas sei que ela é importante.")
+
+input("\nAntes que o livro possa continuar...")
+
+input("\nTheo: Ei! Aí está você!")
+
+input("\nVocê se assusta e rapidamente esconde o livro dentro da mochila.")
+
+input("\nTheo corre pelo corredor até você.")
+
+input("\nTheo: Eu procurei você pelo dormitório inteiro!")
+input("Theo: A primeira aula vai começar em poucos minutos!")
+
+input("\nVocê: Já?")
+
+input("\nTheo: Sim!")
+input("Theo: Se chegarmos atrasados no primeiro dia, os professores vão acabar com a nossa reputação.")
+
+input("\nTheo percebe a chave em sua mão.")
+
+input("\nTheo: O que é isso?")
+
+print("\nComo você responde?")
+print("1 - Encontrei no corredor.")
+print("2 - É um segredo.")
+print("3 - Não faço ideia do que seja.")
+
+resposta = input("Escolha uma opção: ")
+
+if resposta == "1":
+    input("\nVocê: Encontrei no corredor.")
+    input("Theo: Estranho... parece bem antiga.")
+
+elif resposta == "2":
+    input("\nVocê: É um segredo.")
+    input("Theo: Agora eu fiquei curioso.")
+
+elif resposta == "3":
+    input("\nVocê: Não faço ideia do que seja.")
+    input("Theo: Então estamos no mesmo barco.")
+
+input("\nTheo: Bem, podemos investigar isso depois.")
+input("Theo: Agora vamos para a aula!")
+
+input("\nLivro Misterioso (sussurrando dentro da mochila):")
+input("Não conte nada para ninguém.")
+
+input("\nVocê guarda a chave e segue Theo pelos corredores de Hogwarts.")
+
+input("\n=== MISSÃO CONCLUÍDA: A CHAVE DE PRATA ===")
+input("Item obtido: Chave de Prata Misteriosa")
+input("\n=== AULA DE DEFESA CONTRA AS ARTES DAS TREVAS ===")
+
+input("\nVocê e Theo correm pelos corredores de Hogwarts.")
+
+input(f"\n{nome}: Espero que a professora não fique muito brava por causa do atraso...")
+
+input("\nTheo: Relaxa, talvez ela nem perceba.")
+
+input("\nTheo: Embora eu não apostaria nisso.")
+
+input("\nVocês chegam à sala de aula ofegantes.")
+
+input("\nA professora Cassandra está parada em frente à turma.")
+
+input("\nProfessora Cassandra: Que bom que resolveram aparecer.")
+
+input("\nProfessora Cassandra: Talvez vocês dois acreditem que o horário das aulas seja apenas uma sugestão.")
+
+input("\nTheo: Desculpe, professora...")
+
+input(f"\n{nome}: Desculpe, professora. Não vai acontecer novamente.")
+
+input("\nProfessora Cassandra: É melhor mesmo.")
+
+input("\nProfessora Cassandra: Sentem-se antes que eu retire pontos da casa de vocês.")
+
+input("\nVocês se sentam rapidamente.")
+
+input("\nProfessora Cassandra: Hoje aprenderemos algumas magias ofensivas básicas.")
+
+input("\nProfessora Cassandra: Elas podem ser úteis caso encontrem criaturas perigosas.")
+
+input("\nA professora desenha símbolos mágicos no quadro.")
+
+input("\nProfessora Cassandra: A primeira magia é 'Expulso'.")
+
+input("\nProfessora Cassandra: Ela empurra o alvo para trás com força.")
+
+input(f"\n{nome}: Parece útil para afastar inimigos.")
+
+input("\nProfessora Cassandra: Exatamente.")
+
+input("\nVocê anota a magia em seu caderno.")
+
+input("\nProfessora Cassandra: A segunda magia é 'Stupefy'.")
+
+input("\nProfessora Cassandra: Um feitiço capaz de atordoar o inimigo.")
+
+input(f"\n{nome}: Espero não precisar usar isso tão cedo.")
+
+input("\nTheo: Em Hogwarts? Boa sorte com isso.")
+
+input("\nVocê pratica os movimentos da varinha.")
+
+input("\nProfessora Cassandra: Muito bem.")
+
+input("\nApós algum tempo, a aula termina.")
+
+input("\nProfessora Cassandra: Estudem para a próxima aula.")
+
+input("\nOs alunos começam a deixar a sala.")
+
+input("\nTheo: Finalmente acabou.")
+
+input("\nTheo: Vou para o Grande Salão.")
+
+input("\nTheo: Te vejo depois!")
+
+input(f"\n{nome}: Até mais, Theo.")
+
+input("\nTheo vai embora pelo corredor.")
+
+input("\nVocê verifica se ninguém está olhando.")
+
+input("\nLivro Misterioso: Agora que estamos sozinhos...")
+
+input("\nLivro Misterioso: Precisamos encontrar outra pista.")
+
+input("\nLivro Misterioso: Vá até a ala antiga do castelo.")
+
+input(f"\n{nome}: E o que exatamente estou procurando?")
+
+input("\nLivro Misterioso: Se eu soubesse de tudo, não precisaria da sua ajuda.")
+
+input("\nLivro Misterioso: Apenas vá.")
+
+input("\nVocê segue pelo corredor quase vazio.")
+
+input("\nAs paredes ficam cada vez mais antigas e silenciosas.")
+
+input("\nDe repente...")
+
+input("\nVocê ouve um rugido estranho.")
+
+input("\nROOOAAARRR!")
+
+input("\nUma criatura monstruosa surge na sua frente!")
+
+input("\nEla tem garras afiadas, olhos vermelhos e bloqueia completamente o corredor.")
+
+input(f"\n{nome}: O que é essa coisa?!")
+
+input("\nLivro Misterioso: Isso não é bom.")
+
+input("\nLivro Misterioso: Use as magias que aprendeu!")
+
+input(f"\n{nome}: Você não podia ter avisado antes que existiam monstros aqui?")
+
+input("\nLivro Misterioso: Agora não é hora para reclamações!")
+
+input("\n=== NOVA MISSÃO ===")
+input("DERROTE O MONSTRO DO CORREDOR")
+
+vida_monstro = 30
+
+while vida_monstro > 0:
+
+    print("\nO que você faz?")
+    print("1 - Expulso")
+    print("2 - Stupefy")
+
+    ataque = input("Escolha uma magia: ")
+
+    if ataque == "1":
+        dano = 10
+        vida_monstro -= dano
+
+        input(f"\n{nome}: Expulso!")
+        input(f"O feitiço atinge o monstro e causa {dano} de dano!")
+
+    elif ataque == "2":
+        dano = 15
+        vida_monstro -= dano
+
+        input(f"\n{nome}: Stupefy!")
+        input(f"O feitiço atinge o monstro e causa {dano} de dano!")
+
+    else:
+        input(f"\n{nome}: Ah não...")
+        input("Você hesita e perde a oportunidade de atacar.")
+
+    if vida_monstro > 0:
+        input(f"\nVida do monstro: {vida_monstro}")
+        input("\nO monstro ruge furiosamente!")
+        input("Ele se prepara para atacar novamente!")
+
+input("\nO monstro cambaleia para trás.")
+
+input("\nROOOAAARRR!")
+
+input("\nA criatura cai no chão derrotada.")
+
+input(f"\n{nome}: Eu consegui!")
+
+input("\nLivro Misterioso: Impressionante.")
+
+input("\nLivro Misterioso: Para um aluno do primeiro ano, você se saiu muito bem.")
+
+input(f"\n{nome}: Agora você vai me explicar o que está acontecendo?")
+
+input("\nLivro Misterioso: Em breve.")
+
+input("\nVocê se aproxima da criatura derrotada.")
+
+input("\nAo lado dela existe um pequeno medalhão prateado.")
+
+input("\nLivro Misterioso: Pegue isso.")
+
+input(f"\n{nome}: Um medalhão?")
+
+input("\nLivro Misterioso: Sim.")
+
+input("\nLivro Misterioso: Tenho quase certeza de que ele está ligado à chave que encontramos.")
+
+input("\nVocê guarda o medalhão na mochila.")
+
+input("\n=== MISSÃO CONCLUÍDA ===")
+input("Item obtido: Medalhão Misterioso")
+
+input(f"\n{nome}: Então a chave e o medalhão fazem parte do mesmo mistério?")
+
+input("\nLivro Misterioso: Exatamente.")
+
+input("\nLivro Misterioso: E estamos apenas começando.") 
+
+input("\n=== UMA NOVA PISTA ===")
+
+input("\nVocê continua caminhando pelos corredores de Hogwarts.")
+
+input("\nLivro Misterioso: Espere...")
+
+input("\nLivro Misterioso: Acho que acabei de me lembrar de mais alguma coisa.")
+
+input(f"\n{nome}: Mais uma pista?")
+
+input("\nLivro Misterioso: Sim... uma biblioteca... um livro... um símbolo...")
+
+input(f"\n{nome}: Antes disso, eu quero algumas respostas.")
+
+input(f"\n{nome}: Por que estamos fazendo tudo isso?")
+
+input(f"\n{nome}: E como você sabe dessas coisas?")
+
+input("\nO livro fica em silêncio por alguns segundos.")
+
+input("\nLivro Misterioso: Eu... não sei.")
+
+input(f"\n{nome}: Como assim não sabe?")
+
+input("\nLivro Misterioso: Tudo o que me lembro é de acordar um dia sendo um livro.")
+
+input("\nLivro Misterioso: Não tenho lembranças de uma infância, família ou mesmo de um nome.")
+
+input("\nLivro Misterioso: Apenas acordei e percebi que existia.")
+
+input("\nLivro Misterioso: Mas eu sinto que nem sempre fui assim.")
+
+input("\nLivro Misterioso: Sinto que fui algo diferente.")
+
+input("\nLivro Misterioso: Talvez até alguém diferente.")
+
+input(f"\n{nome}: E essas pistas?")
+
+input("\nLivro Misterioso: São as únicas memórias que aparecem na minha mente.")
+
+input("\nLivro Misterioso: Fragmentos desconexos.")
+
+input("\nLivro Misterioso: Como se alguém tivesse espalhado minhas lembranças pelo castelo.")
+
+input("\nLivro Misterioso: E cada pista me ajuda a lembrar um pouco mais.")
+
+input(f"\n{nome}: Então estamos tentando descobrir quem você era?")
+
+input("\nLivro Misterioso: Talvez.")
+
+input("\nLivro Misterioso: E talvez descobrir algo muito maior.")
+
+input("\nLivro Misterioso: Agora escute.")
+
+input("\nLivro Misterioso: Vá até a biblioteca.")
+
+input("\nLivro Misterioso: Procure um livro marcado com o símbolo da chave.")
+
+input("\nLivro Misterioso: Tenho certeza de que ele está lá.")
+
+input("\n=== BIBLIOTECA DE HOGWARTS ===")
+
+input("\nApós alguns minutos, você chega à biblioteca.")
+
+input("\nFileiras enormes de livros se estendem até onde a vista alcança.")
+
+input("\nAtrás de uma mesa está Helena, a veterana que o guiou no primeiro dia.")
+
+input("\nHelena: Olá!")
+
+input("\nHelena: Não deveria estar em aula?")
+
+input(f"\n{nome}: É uma longa história.")
+
+input(f"\n{nome}: Estou procurando um livro específico.")
+
+input("\nHelena: Qual livro?")
+
+input("\nVocê descreve o símbolo da chave.")
+
+input("\nHelena parece pensativa.")
+
+input("\nHelena: Estranho...")
+
+input("\nHelena: Já vi esse símbolo antes.")
+
+input("\nEnquanto conversa, o medalhão preso à sua mochila chama a atenção dela.")
+
+input("\nHelena: Espere um segundo...")
+
+input("\nHelena: Esse medalhão!")
+
+input("\nHelena se aproxima rapidamente.")
+
+input("\nHelena: Onde você conseguiu isso?")
+
+input(f"\n{nome}: Eu encontrei depois de derrotar um monstro.")
+
+input("\nHelena parece surpresa.")
+
+input("\nHelena: Isso é impossível.")
+
+input("\nHelena: Esse medalhão pertence à minha família.")
+
+input("\nHelena: Minha mãe confiou ele a mim anos atrás.")
+
+input("\nHelena: Mas ele foi roubado por uma criatura enquanto eu o transportava.")
+
+input(f"\n{nome}: Então ele é seu?")
+
+input("\nHelena: Sim.")
+
+input("\nHelena: Eu procurei por ele durante anos.")
+
+input(f"\n{nome}: Eu devolvo para você.")
+
+input("\nHelena sorri.")
+
+input("\nHelena: Obrigada.")
+
+input(f"\n{nome}: Mas preciso de ajuda para encontrar esse livro.")
+
+input("\nHelena: Combinado.")
+
+input("\nHelena: Eu ajudo você a procurar.")
+
+input("\n=== PROCURA PELO LIVRO ===")
+
+input("\nVocês passam vários minutos examinando prateleiras.")
+
+input("\nUma hora se passa.")
+
+input("\nDepois outra.")
+
+input("\nFinalmente...")
+
+input("\nHelena: Acho que encontrei alguma coisa!")
+
+input("\nEla retira um livro antigo e empoeirado de uma estante escondida.")
+
+input("\nNa capa existe exatamente o mesmo símbolo da chave.")
+
+input(f"\n{nome}: É ele!")
+
+input("\nVocês se sentam em uma mesa e abrem o livro.")
+
+input("\nAs páginas estão cobertas por símbolos estranhos.")
+
+input("\nHelena: Eu nunca vi esse idioma antes.")
+
+input(f"\n{nome}: Nem eu.")
+
+input("\nVocês continuam folheando as páginas.")
+
+input("\nDe repente algo cai do meio do livro.")
+
+input("\nÉ um mapa.")
+
+input("\nUm mapa muito antigo de Hogwarts.")
+
+input("\nHelena: Isso é interessante.")
+
+input("\nHelena: Parece mostrar uma área escondida do castelo.")
+
+input("\nHelena examina o desenho cuidadosamente.")
+
+input("\nHelena: Estranho...")
+
+input("\nHelena: Conheço Hogwarts muito bem.")
+
+input("\nHelena: Mas nunca ouvi falar dessa sala.")
+
+input(f"\n{nome}: Então ela realmente existe?")
+
+input("\nHelena: Pelo mapa, sim.")
+
+input("\nHelena: Mas ninguém deveria saber sobre ela.")
+
+input("\nVocê discretamente abre sua mochila.")
+
+input("\nLivro Misterioso: O mapa!")
+
+input("\nLivro Misterioso: Eu me lembro disso.")
+
+input(f"\n{nome}: Você lembra?")
+
+input("\nLivro Misterioso: Apenas fragmentos.")
+
+input("\nLivro Misterioso: Mas tenho certeza de que essa sala é importante.")
+
+input("\nLivro Misterioso: Muito importante.")
+
+input("\nLivro Misterioso: Você precisa ir até lá.")
+
+input(f"\n{nome}: E o que vamos encontrar?")
+
+input("\nLivro Misterioso: Eu não sei.")
+
+input("\nLivro Misterioso: Mas sinto que uma parte das respostas está naquela sala.")
+
+input("\nHelena: Então qual é o plano?")
+
+input(f"\n{nome}: Eu vou até essa sala.")
+
+input("\nHelena: Sozinho?")
+
+input(f"\n{nome}: Talvez seja perigoso.")
+
+input("\nHelena: Então é exatamente por isso que você não deveria ir sozinho.")
+
+input("\nHelena: Eu vou com você.")
+
+input("\nLivro Misterioso: Quanto mais ajuda, melhor.")
+
+input("\nHelena pega o mapa.")
+
+input("\nHelena: Certo.")
+
+input("\nHelena: Vamos descobrir o que está escondido naquele lugar.")
+
+input("\n=== NOVA MISSÃO ===")
+input("ENCONTRE A SALA SECRETA DE HOGWARTS")
+import random
+
+input("\n=== A SALA SECRETA ===")
+
+input("\nVocê e Helena seguem o mapa pelos corredores antigos de Hogwarts.")
+
+input("\nDepois de algum tempo...")
+
+input("\nTristan aparece na frente de vocês.")
+
+input("\nTristan: Eu sabia que vocês estavam escondendo alguma coisa.")
+
+input(f"\n{nome}: Não é nada da sua conta.")
+
+input("\nTristan: Acho que vou contar tudo para os professores.")
+
+print("\nO que você faz?")
+print("1 - Convencer Tristan")
+print("2 - Ignorar Tristan")
+print("3 - Pedir ajuda para Helena")
+
+escolha = input("Escolha: ")
+
+if escolha == "1":
+    input(f"\n{nome}: Se você contar, nunca vai descobrir o que estamos investigando.")
+    input("\nTristan: Hm...")
+elif escolha == "2":
+    input(f"\n{nome}: Faça o que quiser.")
+    input("\nTristan: Que grosso.")
+else:
+    input("\nHelena: Tristan, por favor.")
+    input("\nHelena: Isso é importante.")
+
+input("\nTristan: Tanto faz.")
+
+input("\nTristan vai embora resmungando.")
+
+input("\nVocês continuam seguindo o mapa.")
+
+input("\nFinalmente chegam ao local marcado.")
+
+input("\nMas não há nada ali.")
+
+input("\nApenas uma parede vazia.")
+
+input(f"\n{nome}: O mapa está errado?")
+
+input("\nHelena: Espere...")
+
+input("\nHelena aponta para um pequeno buraco na parede.")
+
+input(f"\n{nome}: Tem exatamente o tamanho da chave!")
+
+input("\nVocê coloca a Chave de Prata.")
+
+input("\n*CLIQUE*")
+
+input("\nA parede se abre lentamente.")
+
+input("\nUma passagem secreta surge.")
+
+input("\nVocê e Helena entram.")
+
+input("\nA sala é escura e assustadora.")
+
+input("\nNo centro dela existe uma figura parada.")
+
+input("\nTheo.")
+
+input(f"\n{nome}: Theo?!")
+
+input("\nTheo: Ah... então vocês chegaram.")
+
+input("\nTheo: Como encontraram este lugar?")
+
+input(f"\n{nome}: Foi graças a este livro.")
+
+input("\nVocê mostra o Livro Misterioso.")
+
+input("\nTheo arregala os olhos.")
+
+input("\n*PUXÃO*")
+
+input("\nTheo arranca o livro das suas mãos.")
+
+input("\nTheo começa a rir.")
+
+input("\nTheo: Finalmente.")
+
+input(f"\n{nome}: O que está acontecendo?")
+
+input("\nTheo: Eu vou explicar.")
+
+input("\nTheo: Fui expulso desta escola há muitos anos.")
+
+input("\nTheo: A família de Helena foi responsável por isso.")
+
+input("\nTheo: Desde então planejo minha vingança.")
+
+input("\nAtrás dele existem centenas de livros.")
+
+input("\nMas não são livros comuns.")
+
+input("\nSão pessoas aprisionadas.")
+
+input("\nTheo: Eu transformava pessoas em livros.")
+
+input("\nTheo: Depois assumia suas aparências.")
+
+input("\nTheo: Professores.")
+input("\nTheo: Alunos.")
+input("\nTheo: Funcionários.")
+
+input("\nTheo: Eu estava em toda parte.")
+
+input("\nTheo levanta o Livro Misterioso.")
+
+input("\nTheo: E este livro...")
+
+input("\nTheo: Era uma parte de mim.")
+
+input("\nTheo: Quando fui derrotado anos atrás, minha alma foi fragmentada.")
+
+input("\nTheo: Uma parte ficou presa neste livro.")
+
+input("\nTheo: Essa parte recuperou consciência própria.")
+
+input("\nTheo: Foi ela que ajudou você durante toda a aventura.")
+
+input("\nTheo: Você estava sendo guiado por uma parte de mim o tempo todo.")
+
+input("\nHelena observa um mural.")
+
+input("\nNo mural existem várias fotos.")
+
+input("\nPossíveis vítimas futuras.")
+
+input("\nDuas fotos estão marcadas.")
+
+input("\nHelena.")
+
+input("\nE sua irmã.")
+
+input("\nHelena: Não...")
+
+input("\nEla corre até uma estante.")
+
+input("\nSua irmã está presa em forma de livro.")
+
+input("\nIrmã de Helena: Me ajude...")
+
+input("\nHelena fica furiosa.")
+
+input("\nHelena: Eu vou acabar com você!")
+
+input("\n=== BATALHA CONTRA THEO ===")
+
+vida_jogador = 100
+vida_theo = 120
+
+while vida_theo > 0 and vida_jogador > 0:
+
+    print("\n====================")
+    print(f"Vida de {nome}: {vida_jogador}")
+    print(f"Vida de Theo: {vida_theo}")
+    print("====================")
+
+    print("\n1 - Stupefy")
+    print("2 - Expulso")
+    print("3 - Ataque junto com Helena")
+
+    ataque = input("Escolha: ")
+
+    if ataque == "1":
+        dano = random.randint(15, 25)
+        vida_theo -= dano
+        input(f"\n{nome}: STUPEFY!")
+        input(f"Dano causado: {dano}")
+
+    elif ataque == "2":
+        dano = random.randint(10, 35)
+        vida_theo -= dano
+        input(f"\n{nome}: EXPULSO!")
+        input(f"Dano causado: {dano}")
+
+    elif ataque == "3":
+        dano = random.randint(25, 40)
+        vida_theo -= dano
+        input("\nVocê e Helena atacam juntos!")
+        input(f"Dano causado: {dano}")
+
+    if vida_theo > 0:
+        dano_inimigo = random.randint(10, 20)
+        vida_jogador -= dano_inimigo
+        input(f"\nTheo causou {dano_inimigo} de dano!")
+
+input("\nTheo cai de joelhos.")
+
+input("\nTheo: Ainda não acabou...")
+
+input("\nTodas as estantes começam a tremer.")
+
+input("\nCentenas de livros brilham.")
+
+input("\nDas estantes surgem dezenas de pessoas diferentes.")
+
+input("\nTodas eram identidades roubadas por Theo ao longo dos anos.")
+
+input("\nCada uma delas começa a ser puxada para dentro dele.")
+
+input("\nUma.")
+
+input("\nDez.")
+
+input("\nVinte.")
+
+input("\nCinquenta.")
+
+input("\nTheo absorve todas as suas cópias.")
+
+input("\nSeu corpo cresce.")
+
+input("\nSua forma humana desaparece.")
+
+input("\nUma criatura monstruosa feita de magia negra surge.")
+
+input("\n=== SEGUNDA FASE ===")
+
+vida_monstro = 200
+
+while vida_monstro > 0 and vida_jogador > 0:
+
+    print("\n====================")
+    print(f"Sua vida: {vida_jogador}")
+    print(f"Vida do Monstro: {vida_monstro}")
+    print("====================")
+
+    print("\n1 - Stupefy")
+    print("2 - Expulso")
+
+    ataque = input("Escolha: ")
+
+    dano = random.randint(15, 30)
+    vida_monstro -= dano
+
+    input(f"\nVocê causa {dano} de dano!")
+
+    if vida_monstro < 120:
+
+        input("\nO monstro concentra seus ataques em Helena!")
+
+        input("\nUma poderosa magia negra atinge Helena.")
+
+        input("\nHelena cai gravemente ferida.")
+
+        input("\nAgora você está sozinho.")
+
+    if vida_monstro > 0:
+
+        dano_monstro = random.randint(15, 35)
+        vida_jogador -= dano_monstro
+
+        input(f"\nO monstro causa {dano_monstro} de dano!")
+
+        if vida_jogador <= 20:
+
+            input("\nVocê está perdendo a batalha.")
+
+            input("\nUma voz ecoa pela sala.")
+
+            input("\nProfessor Magnus: Excelente trabalho, jovem.")
+
+            input("\nProfessora Cassandra: Agora deixe o resto conosco.")
+
+            vida_jogador += 60
+
+            input("\nOs professores restauram parte da sua energia.")
+
+            dano_magnus = random.randint(30, 50)
+            dano_cassandra = random.randint(30, 50)
+
+            vida_monstro -= (dano_magnus + dano_cassandra)
+
+            input(f"\nMagnus causa {dano_magnus} de dano!")
+            input(f"Cassandra causa {dano_cassandra} de dano!")
+
+input("\nO monstro começa a desaparecer.")
+
+input("\nMonstro: Eu já voltei uma vez...")
+
+input("\nMonstro: E vou voltar novamente...")
+
+input(f"\nMonstro: Da próxima vez... eu vou me vingar de você... {nome}...")
+
+input("\nO vilão desaparece.")
+
+input("\nTodas as pessoas presas nos livros são libertadas.")
+
+input("\nA irmã de Helena volta ao normal.")
+
+input("\nHelena abraça a irmã emocionada.")
+
+input("\n=== ALGUNS DIAS DEPOIS ===")
+
+input("\nToda a escola está reunida no Grande Salão.")
+
+input("\nProfessor Magnus: Pela coragem demonstrada.")
+
+input("\nProfessora Cassandra: E por salvar Hogwarts.")
+
+input(f"\nProfessor Magnus: Parabéns, {nome}.")
+
+input("\nProfessor Magnus: Você receberá uma honraria especial da escola.")
+
+input("\nTodo o salão aplaude.")
+
+input("\nHelena sorri para você.")
+
+input("\nLivro Misterioso: Talvez esta aventura tenha acabado.")
+
+input(f"\n{nome}: Talvez.")
+
+input("\nLivro Misterioso: Mas Hogwarts ainda guarda muitos segredos.")
+
+input("\n=== FIM ===")
+input("\nObrigado por jogar!")
